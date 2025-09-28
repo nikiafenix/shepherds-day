@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shepherd's Day</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/e86eebde-5afa-40d3-b965-2a225d2a1c02/scythe.png?v=1679353611801"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+    <script src="intro.js"></script>
+    <script src="homescreen.js"></script>
+
+    <style>
+      canvas {
+        position: absolute;
+        width: 20vw;
+        margin-top: 5vh;
+        z-index: -1;
+        border-radius: 20px;
+      }
+      main {
+        /*         border: 2px solid yellow; */
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!--       <div class="hiddenInstructions"> -->
+
+      <div class="instructions">
+        <div id="instructions" style="text-align: center">
+          About 150,000 people die everyday. As a part of the Reaper's
+          Association, you, Shepherd, are a critical part of this process.
+          Within your jurisdiction are the following:
+          <br />
+          <br />
+          <li style="text-align: left">
+            Region #312920 (Cincinnati, Ohio, USA)
+          </li>
+          <li style="text-align: left">
+            Region #28391 (Los Olivos, Lima, Perú)
+          </li>
+          <li style="text-align: left">
+            Region #84103 (unnamed region in Kazakhstan)
+          </li>
+          <br />
+          Before reaping their souls, your responsibility is to ensure that each
+          human is known -- even just a little bit -- by somebody.
+        </div>
+      </div>
+
+      <!--       </div> -->
+      <h1 id="title">Shepherd's Day</h1>
+      <a href="start.html" id="PhoneStart"> </a>
+      <p id="AnOdeToThose">An ode to those who left</p>
+      <marquee id="OdeMarquee" scrollamount="5"
+        >with bills to pay - with songs to write - before saying goodbye - with
+        a jug of milk in the fridge - with a grudge in their heart - before
+        claiming love - before seeing someone else die - with unfinished
+        business - too soon - their kids behind - before their parents
+        did</marquee
+      >
+    </div>
+  </body>
+</html>

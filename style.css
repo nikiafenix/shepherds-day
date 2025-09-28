@@ -1,0 +1,551 @@
+@font-face {
+  font-family: "pixel";
+  src: url("https://cdn.glitch.global/e86eebde-5afa-40d3-b965-2a225d2a1c02/slkscr.ttf?v=1677108549904");
+}
+
+h1 {
+  font-family: "pixel", sans-serif;
+  color: white;
+  font-size: 32px;
+}
+
+body {
+  font-family: "pixel", sans-serif;
+  background-color: rgb(0, 10, 0);
+  color: white;
+  margin: 0px;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #ebb434;
+}
+
+abbr {
+  color: gray;
+}
+
+/* index */
+#OdeMarquee {
+  position: fixed;
+  bottom: 13vh;
+  width: 300px;
+  left: 41vw;
+}
+
+/* back button on tv screen */
+.backbutton {
+  position: fixed;
+  left: 48.5vw;
+  bottom: 13vh;
+  text-decoration: underline;
+}
+
+/* back button on full screen  */
+#BACK {
+  display: inline-block;
+  position: fixed;
+  left: 5vw;
+  bottom: 3vh;
+  padding: 5px;
+  border: 2px white solid;
+}
+/* index */
+
+#PhoneStart {
+  margin-left: 23vw;
+  margin-top: 55vh;
+  height: 10%;
+  width: 5%;
+  position: fixed;
+}
+
+#AnOdeToThose {
+  position: fixed;
+  left: 43vw;
+  bottom: 15vh;
+}
+
+/* generic container that idk what it is
+.container {
+  position: fixed;
+  color: white;
+  height: 90vh;
+  width: 90vw;
+  top: 8vh;
+  left: 8vw;
+ border: 1px solid yellow; */
+
+/* INTRO TEXT */
+.intro-background {
+  margin-top: 5vh;
+  margin-left: calc((100vw - 1000px) / 2);
+}
+
+#intro-background {
+  width: 1000px;
+  border-radius: 20px;
+}
+
+.intro-container {
+  position: fixed;
+  height: 92vh;
+  width: 100vw;
+  top: 8vh;
+  left: 0vw;
+}
+
+.JC {
+  font-family: "pixel", sans-serif;
+  color: rgb(240);
+  margin-left: calc((100vw - 980px) / 2);
+  text-align: left;
+  font-size: 1em;
+}
+
+.LastJC {
+  font-family: "pixel", sans-serif;
+  color: rgb(240);
+  margin-left: calc((100vw - 980px) / 2);
+  text-align: left;
+  font-size: 1em;
+}
+
+.blinking {
+  animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* makes JC text yellow when you hover */
+.JC:hover {
+  color: #ebb434;
+}
+
+.Shepherd {
+  font-family: "pixel", sans-serif;
+  color: rgb(255, 255, 255);
+  margin-right: calc((100vw - 980px) / 2);
+  text-align: right;
+  font-size: 1em;
+  animation: fadeIn 2s;
+}
+
+/* makes Shepherd text yellow when you hover */
+.Shepherd:hover {
+  color: #ebb434;
+}
+
+/* makes Shepherd text fade in  */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* takes out triangles on details  */
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* RJ homescreen */
+#kill {
+  position: fixed;
+  left: 46.5vw;
+  bottom: 15vh;
+  text-decoration: underline;
+}
+
+#kill:hover {
+  cursor: url("https://cdn.glitch.global/e86eebde-5afa-40d3-b965-2a225d2a1c02/skeleton%20hand.png?v=1679474079459"),
+    crosshair;
+}
+
+#CreateRJGif {
+  margin-top: 5vh;
+  margin-left: calc((100vw - 1000px) / 2);
+  z-index: -1;
+  border-radius: 20px;
+}
+
+/* map */
+
+.MapHeader {
+  white-space: nowrap;
+  padding: 1vw;
+  /*     border: 2px red solid; */
+}
+
+#HaveHeader {
+  display: inline-block;
+  margin-left: 2vw;
+}
+
+#HaveNotHeader {
+  display: inline-block;
+  margin-left: 8vw;
+}
+
+.marquees {
+  white-space: nowrap;
+}
+
+.HaveNotCities {
+  position: fixed;
+  width: 70vw;
+  margin-left: 30vw;
+}
+
+#HaveNotMuseums {
+  position: fixed;
+  display: inline-block;
+  margin-left: 30vw;
+}
+
+#HaveNotMuseums2 {
+  position: fixed;
+  display: inline-block;
+  margin-left: 50vw;
+  margin-top: 0vh;
+}
+
+#HaveNotRestaurants {
+  position: fixed;
+  display: inline-block;
+  margin-left: 70vw;
+  margin-top: 0vh;
+}
+
+#HavePlaces {
+  position: fixed;
+  display: inline-block;
+  margin-left: 3vw;
+  margin-right: 70vw;
+}
+
+/* guitar  */
+.TVdiv {
+  margin-top: 5vh;
+  width: 1000px;
+  height: 667px;
+  margin-left: calc((100vw - 1000px) / 2);
+  border-radius: 20px;
+  /*   background-color: red; */
+}
+
+.RecordingA {
+  /*   display: flex; */
+  height: 111px;
+  background-color: black;
+  border: 1px gray solid;
+  padding: 0px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.RecordingA:hover {
+  background-color: rgb(30, 30, 30);
+}
+
+.Recording {
+  height: 111px;
+  background-color: black;
+  border: 1px gray solid;
+  padding: 0px;
+}
+
+.Recording:hover {
+  background-color: rgb(30, 30, 30);
+}
+
+.RecordingZ {
+  height: 111px;
+  background-color: rgb(30, 30, 30);
+  border: 1px gray solid;
+  padding: 0px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+h3 {
+  font-family: "helvetica";
+}
+
+.RecordingTitle {
+  margin-left: 20px;
+  margin-top: 45px;
+  font-size: 25px;
+  margin-bottom: 0px;
+  line-height: 0px;
+}
+
+.RecordingDate {
+  position: fixed;
+  margin-left: 20px;
+  color: gray;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.RecordingLength {
+  position: fixed;
+  margin-left: 925px;
+  color: gray;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.recordingCircle {
+  position: fixed;
+  margin-left: 475px;
+  margin-top: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: orangered;
+}
+
+.recordingCircleOutline {
+  position: fixed;
+  margin-left: 470px;
+  margin-top: 25px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  border: 2.75px solid white;
+}
+
+/* height  */
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "pixel-argent";
+  src: url("https://cdn.glitch.global/11c8f1c3-94de-4ab3-89cf-293c1ec7f9ba/ArgentPixelCF-Regular.otf?v=1679296077836");
+}
+
+@font-face {
+  font-family: "pixel-argent-italic";
+  src: url("https://cdn.glitch.global/11c8f1c3-94de-4ab3-89cf-293c1ec7f9ba/ArgentPixelCF-Italic.otf?v=1679296082277");
+}
+
+/* type */
+
+.heightBody {
+  font-family: "pixel-argent";
+  background-color: #242b23;
+  color: white;
+}
+
+/* header{
+  height: 100vh;
+} */
+
+#height-h1 {
+  font-family: "pixel-argent";
+}
+#frontwall {
+  position: fixed;
+  background-color: #31392f;
+  left: 0vw;
+  top: 0vh;
+  right: 65vw;
+  bottom: 0vh;
+  z-index: -1;
+}
+
+#heightmarks {
+  position: fixed;
+  height: 100vh;
+  top: 0vh;
+  right: 65vw;
+}
+#subtitle {
+  line-height: 20px;
+  font-family: "pixel-argent-italic";
+}
+
+.heightSection {
+  width: 600px;
+  margin-left: 40vw;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+#heightHeader {
+  width: 35vw;
+  left: 8vw;
+  top: 43vh;
+  position: fixed;
+  margin-top: 0vh;
+}
+
+#heightBack {
+  position: fixed;
+  top: 5vh;
+  left: 5vh;
+}
+
+/* goodbye container */
+.goodbyeBody {
+  padding: 40px;
+  margin: 100px;
+}
+
+#goodbyeText {
+  text-align: center;
+}
+
+#goodbye {
+  left: auto;
+}
+
+/* idk */
+.bck {
+  background-size: cover;
+  height: 40vw;
+  width: 60vw;
+  margin-left: 20vw;
+  margin-top: 5vh;
+  height: auto;
+  z-index: -1;
+}
+
+.bck2 {
+  background-size: cover;
+  height: 100vh;
+  width: 150vh;
+  margin-left: 25vh;
+  height: auto;
+  z-index: -1;
+}
+
+.container2 {
+  position: fixed;
+  height: 100vh;
+  width: 150vh;
+  margin-left: 25vh;
+  /*   border: 1px solid yellow; */
+}
+
+#title {
+  position: fixed;
+  font-size: 6vh;
+  top: 65vh;
+  left: 50vw;
+  animation: fadeIn 3.5s;
+}
+
+#title:hover {
+  font-size: 7vh;
+  left: 48vw;
+}
+
+.instructions {
+  position: fixed;
+  margin-top: 5vh;
+  width: 1000px;
+  height: 667px;
+  margin-left: calc((100vw - 1000px) / 2);
+  border-radius: 20px;
+}
+
+#instructions {
+  position: fixed;
+  margin-top: 25vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  width: 700px;
+  opacity: 0%;
+}
+
+#instructions:hover {
+  opacity: 100%;
+}
+
+.hiddenInstructions {
+  opacity: 0%;
+}
+
+.shownInstructions {
+  position: fixed;
+  margin-top: 25vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  width: 700px;
+  opacity: 100%;
+}
+
+.phonecall {
+  margin-top: 10vh;
+  margin-left: 20vw;
+  margin-right: 30vw;
+}
+
+.intro {
+  color: rgb(240, 240, 240);
+  background-repeat: no-repeat;
+  background-image: url("https://cdn.glitch.global/e86eebde-5afa-40d3-b965-2a225d2a1c02/RJ.gif?v=1677566982282");
+  background-size: auto 100%;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.height-title {
+  background-color: black;
+  border-style: solid;
+  border-color: red;
+  position: fixed;
+}
+
+section {
+  width: 600px;
+  margin-left: 400px;
+}
+
+.scroll {
+  margin-left: 400px;
+  top: 0px;
+  background-color: blue;
+  color: rgb(255, 255, 255);
+}
+
+#scroll {
+  margin-left: 50vw;
+}
+
+.test-js {
+  margin: 0px;
+  width: 60%;
+  height: 40%;
+}
+
+#BringRJHome {
+  text-align: center;
+  margin-top: 80vh;
+}
+
+.back {
+  width: 1000px;
+  margin-top: 5vh;
+  z-index: -1;
+  border-radius: 20px;
+}
